@@ -194,17 +194,17 @@ main section .projects .project-list .project-item {
 }
 
 main section .projects .project-list .project-item h3 {
-    font-size: medium;
+    font-size: large;
 
 }
 
 main section .projects .project-list .project-item p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 5px;
 }
 
 main section .projects .project-list .project-item .icons {
-    margin-top: 1.5rem;
+    margin-top: .78rem;
     text-align: right;
 }
 
@@ -214,6 +214,12 @@ main section .announcements {
 main section .announcements h2{
     font-size: 20px;
    
+}
+
+main section .notifications {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
 main section .announcements .announcements-list {
@@ -227,7 +233,7 @@ main section .announcements .announcements-list {
 }
 
 main section .announcements .announcements-list .announcement-item {
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
 }
 
 main section .announcements .announcements-list .announcement-item:not(:last-child) {
@@ -235,7 +241,7 @@ main section .announcements .announcements-list .announcement-item:not(:last-chi
 }
 
 main section .announcements .announcements-list .announcement-item p{
-    padding-bottom: 1rem;
+    padding-bottom: .8rem;
     font-size: 12px;
     
 }
@@ -243,5 +249,26 @@ main section .announcements .announcements-list .announcement-item p{
 main section .announcements .announcements-list .announcement-item h3 {
     font-size: medium;
     font-weight: bold;
-    padding: 5px;
+}
+
+section .notifications .trending  .trending-list{
+    background-color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.trending h2{
+    font-size: 20px;
+}
+
+
+.trending-item {
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.trending-item .trending-project p {
+    font-size: 12px;
 }
