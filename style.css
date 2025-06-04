@@ -142,6 +142,10 @@ main header .user .greeting{
     font-size: x-small;
 }
 
+main header .user .user-name {
+    font-size: small;
+}
+
 
 main header .user .buttons {
     margin-right: 2rem;
@@ -155,7 +159,51 @@ main header .user .buttons button {
     background-color: var(--backgroung-color);
     color: var(--text-color);
     border: none;
+    font-size: x-small;
 }
-section {
+main section {
+    
     background-color: rgba(214, 214, 213, 0.785);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+main section .projects h2 {
+    font-size: 20px;
+}
+main section .projects .project-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 5px;
+}
+
+main section .projects .project-list .project-item {
+    background-color: var(--text-color);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    border-left: 4px solid var(--backgroung-color);
+    justify-content: space-between;
+}
+
+main section .projects .project-list .project-item h3 {
+    font-size: medium;
+
+}
+
+main section .projects .project-list .project-item p {
+    font-size: 13px;
+    margin-top: 5px;
+    max-height: 200px;
+}
+
+main section .projects .project-list .project-item .icons {
+    margin-top: 1.5rem;
+    text-align: right;
 }
